@@ -3,27 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meu primeiro programa</title>
+<title>Dom</title>
 <style>
-    body{
-background-color: rgb(247, 193, 239);
+body{
+background-color: blue;
 color: white;
-font: normal 20pt Arial;
-}
-
-    h1{
-color: rgb(3, 90, 17);
+font: normal 18pt arial ;
 }
 </style>
 </head>
 <body>
-<h1>Olá, mundo!</h1>
-<p>Já me livrei da maldição!!</p>
+<h1>Iniciando os estudos em DOM</h1>
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar o <strong>DOM</strong> em javaScript</p>
+<div>Clique em mim</div>
 <script>
-    var n1 =Number(window.prompt ("Digite um número"))
-    var n2 =Number(window.prompt ("Digite outro número"))
-    var s = n1+n2
-    window.alert ("A soma de " + n1 + "e" + n2 + "é" + s)
+var p1 = window.document.getElementsByTagName("p")[1]
+window.document.write("Esta escrito assim " +p1.innerText)
 </script>
 </body>
 </html>
