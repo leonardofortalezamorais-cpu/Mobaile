@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap&quot; rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="phone">
+<div class="phone-notch"></div>
+<div class="app">
+
+<!-- Barra de status (decorativa) -->
+<div class="status-bar">
+<span id="clock">9:41</span>
+<span class="status-icons">📶 📡 🔋</span>
+</div>
+
+<!-- Cabeçalho -->
+<header class="app-header">
+<h1>Minhas Tarefas</h1>
+<button class="theme-toggle" id="theme-toggle" title="alternar tema" aria-label="alternar tema claro/escuro">🌙</button>
+</header>
+<main>
+<section id="view-task" class="view view-active">
+<form id="task-form">
+<input type="text" id="task-input" placeholder="adicionar Tarefa..." maxlength="80"
+autocomplete="off"
+required>
+</form>
+<select id="task-priority" title="Prioridade">
+<option value="baixa">baixa</option>
+<option value="média">média</option>
+<option value="Alta">Alta</option>
+</select>
+<button type="submit" aria-label="adicionar tarefa">+</button>
+<div class="filters" id="filters">
+<button class="filter-btn filter-active" data-filter="todas">todas</button>
+<button class="filter-btn" data-filter="pendentes">pendentes</button>
+<button class="filter-btn" data-filter="concluidas">concluidas</button>
+</div>
+<ul id="task-list"></ul>
+<p id="empty-state" hidden>
+<span>📚</span>nenhuma tarefa por aqui<br/>Adicione a primeira tarefa
+</p>
+</section>
+<section id ="view-stats" class="view">
+    <div class="stats-grid"></div>
+    <div class="stat-card"></div>
+    <div class="stat-number" id="stat-toltal">0
+
+    </div>
+    <div class="stat-label">total</div>
+</section>
+<section></section>
+</main>
+</body>
+</html>
+ 
